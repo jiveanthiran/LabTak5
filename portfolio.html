@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>Lab Task 5 WebApps</title> 
+
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css"/>
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .content-title {
+      padding: 10px 20px;
+      background-color: #000080;
+      color: #00FFFF;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .content-details {
+      display: none;
+      padding: 20px;
+      background: linear-gradient(to bottom right, #b3e0ff, #ffffff);
+      border-radius: 10px;
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        text-align: center;
+        margin: 16px auto;
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+ 
+<body>
+  <div data-role="page" id="index">
+    <div data-role="header">
+      <h1> Lab Task 5 WebApps</h1>
+    </div>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="index.html" rel="external" data-theme="b" data-icon="home">About Us</a></li>
+        <li><a href="Portfolio.html" rel="external" data-theme="b" data-icon="grid">Portfolio</a></li>
+        <li><a href="Contact.html" rel="external" data-theme="b" data-icon="info">Contact Us</a></li>
+		
+      </ul>
+    </div>
+  
+    <div data-role="main" class="ui-content">
+      <!-- Content within the centered container -->
+      <div class="container">
+        <div class="section-title">Meet Our Team</div>
+
+        <!-- Team Member 1 -->
+        <div class="content-title" data-theme="b">
+          <i class="fas fa-plus"></i> SATHYA MUTHUVAIRU - Lead Developer
+        </div>
+        <div class="content-details">
+          <p>SATHYA MUTHUVAIRU is our lead developer, recognized for outstanding contributions to various coding projects. His expertise and dedication have been instrumental in the success of our web development initiatives.</p>
+          <p>Awards: Outstanding Coding Project Award</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="content-title" data-theme="b">
+          <i class="fas fa-plus"></i> PRIASHINI NATHAN RAJ - UX/UI Designer
+        </div>
+        <div class="content-details">
+          <p>PRIASHINI NATHAN RAJ, our UX/UI designer, has received acclaim for her exceptional design projects. Her creativity and attention to user experience have set a high standard in multimedia arts.</p>
+          <p>Awards: Best Portfolio Showcase Award (Points: 8)</p>
+        </div>
+        
+        <!-- Team Member 3 -->
+        <div class="content-title" data-theme="b">
+          <i class="fas fa-plus"></i> KAVIINTH RAAJ GANESAN - Entrepreneurial Visionary
+        </div>
+        <div class="content-details">
+          <p>KAVIINTH RAAJ GANESAN, an entrepreneurial visionary, received the Top Pitch at Entrepreneurship Competition award. His ability to articulate startup visions has been key to our success.</p>
+          <p>Awards: Top Pitch at Entrepreneurship Competition (Points: 12)</p>
+        </div>
+        
+        <!-- Team Member 4 -->
+        <div class="content-title" data-theme="b">
+          <i class="fas fa-plus"></i> VIJAY DEVERAKONDA - Social Impact Advocate
+        </div>
+        <div class="content-details">
+          <p>VIJAY DEVERAKONDA, a social impact advocate, has been recognized for her outstanding contribution to community initiatives. Her tech-driven projects have positively impacted society.</p>
+          <p>Awards: Community Impact Award (Points: 9)</p>
+        </div>
+
+        <!-- Team Member 1's Certificates -->
+        <div class="section-title">SATHYA MUTHUVAIRU's Certificates</div>
+        <!-- Certificate Viewer -->
+        <div class="content-title" data-theme="b">
+          <i class="fas fa-plus"></i> Certificate Viewer
+        </div>
+        <div class="content-details">
+          <p style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Machine Learning by Stanford University</span>
+            <a href="https://drive.google.com/file/d/1jMQmnqLW1r4jNdU0nr1rHP13YjnAaO9z/view?usp=sharing" target="_blank">
+              <i class="fas fa-chevron-right" style="font-size: 1em;"></i>
+            </a>
+          </p>
+          <hr>
+          <p style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Advanced Algorithms and Data Structures</span>
+            <a href="https://drive.google.com/file/d/1hJiI58V-DsT-6_AwlqsHsDV1kLY9ZeeP/view?usp=sharing" target="_blank">
+              <i class="fas fa-chevron-right" style="font-size: 1em;"></i>
+            </a>
+          </p>
+        </div>
+        
+        <!-- Add more team members or customize the content as needed -->
+
+      </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+      <h4>Copyright &copy; Group X S1 2023/2024</h4>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        // Toggle content visibility when clicking on the title
+        $('.content-title').click(function() {
+          $(this).next('.content-details').slideToggle();
+          $(this).find('i').toggleClass('fa-plus fa-minus');
+        });
+      });
+    </script>
+  </div>
+</body>
+</html>

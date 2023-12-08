@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Lab Task 5 WebApps</title>
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css"/>
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Add your custom styles here */
+    .testimonial {
+      margin-bottom: 20px;
+    }
+
+    .testimonial i {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div data-role="page" id="contact">
+    <div data-role="header">
+      <h1>Contact Us</h1>
+    </div>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="index.html" rel="external" data-theme="b" data-icon="home">About Us</a></li>
+        <li><a href="portfolio.html" rel="external" data-theme="b" data-icon="grid">Portfolio</a></li>
+        <li><a href="contact.html" rel="external" data-theme="b" data-icon="info">Contact Us</a></li>
+        
+      </ul>
+    </div>
+    <div data-role="main" class="ui-content">
+      <!-- Content goes here -->
+      <p>Feel free to contact us:</p>
+      <form>
+        <!-- Email Button -->
+        <input type="button" value="Email" onclick="window.location.href='mailto:your@email.com';">
+
+        <!-- WhatsApp Button -->
+        <input type="button" value="WhatsApp" onclick="window.location.href='https://wa.me/1234567890';">
+      </form>
+
+      <!-- Testimonials Section -->
+      <div class="testimonial-section">
+        <h2>Testimonials</h2>
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial">
+          <i class="fas fa-user"></i>
+          <p>"Working with this team has been an amazing experience. They are highly skilled and dedicated individuals."</p>
+          <p>- SATHYA MUTHUVAIRU, Web Developer</p>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial">
+          <i class="fas fa-user"></i>
+          <p>"The creativity and professionalism of this group are truly commendable. I would recommend them without hesitation."</p>
+          <p>- PRIASHINI NATHAN RAJ, UX Designer</p>
+        </div>
+
+        <!-- Add more testimonials as needed -->
+      </div>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>Copyright &copy; Group X S1 2023/2024</h4>
+    </div>
+  </div>
+</body>
+</html>
